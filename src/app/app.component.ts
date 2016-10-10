@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+  	<h1>Inline Template</h1>
+  	<fa-other></fa-other>`,
   styles: [`
 	h1 {
 		color: red;
