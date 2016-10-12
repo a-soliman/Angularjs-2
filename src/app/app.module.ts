@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertBindingComponent } from './databinding/propert-binding.component';
+import { EventBindingComponent } from './databinding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DatabindingComponent,
     PropertBindingComponent,
+    EventBindingComponent,
   ],
   imports: [
     BrowserModule,
