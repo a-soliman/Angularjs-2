@@ -1,19 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-propert-binding',
   template: `
-    <p>
-      propert-binding Works!
-    </p>
+    {{result}}
   `,
   styles: []
 })
-export class PropertBindingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class PropertBindingComponent {
+  @Input() result = 0;
 
 }
