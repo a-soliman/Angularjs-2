@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-event-binding',
   template: `
-    <button [click]="onClicked()" >Click me!</button>
+    <button (click)="onClicked()" >Click me!</button>
   `,
   styles: []
 })
