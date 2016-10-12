@@ -8,4 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class DatabindingComponent {
 	stringInterpolation = 'this is a sting interpolation';
 	numberInterpolation = 2;
+
+	onClicked(value: string) {
+		alert(value)
+	}
 }

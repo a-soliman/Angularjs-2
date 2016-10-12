@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-event-binding',
@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class EventBindingComponent {
+  @Output('clickable') clicked = new EventEmitter();
   onClicked() {
-    alert("it Worked!")
+    this.clicked.emit("it work!")
   }
 
 }
