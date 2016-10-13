@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { PropertBindingComponent } from './databinding/propert-binding.component';
 import { EventBindingComponent } from './databinding/event-binding.component';
+import { LifecycleComponent } from './lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { EventBindingComponent } from './databinding/event-binding.component';
     DatabindingComponent,
     PropertBindingComponent,
     EventBindingComponent,
+    LifecycleComponent,
   ],
   imports: [
     BrowserModule,
