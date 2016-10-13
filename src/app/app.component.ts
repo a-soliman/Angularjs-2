@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   template: `
   	<h1>Root Component</h1>
   	<app-databinding></app-databinding>
+  	<app-lifecycle></app-lifecycle>
   	`
 })
 export class AppComponent {
