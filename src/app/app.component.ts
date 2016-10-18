@@ -1,21 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: `
-  	<h1>Root Component</h1>
-  	<app-databinding></app-databinding>
-  	<app-lifecycle *ngIf="!delete" [bindable]="boundValue">
-		<p>{{test}}</p>
-  	</app-lifecycle>
-  	<button (click)="delete = true">Click to delete</button>
-  	<button (click)="test = 'Ahmed Changed Value'">Click to Change</button>
-  	<button (click)="boundValue =2000">Click to Change Binding</button>
-  	`
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'This is my App!';
-  delete = false;
-  test = 'starting value';
-  boundValue = 1000;
+export class AppComponent implements OnInit {
+  testData: string[] = [];
+
+  ngOnInit() {
+    for (let i = 0; i < 5; i++) {
+      this.testData.push('New Item: ' + i);
+    }
+  }
 }
